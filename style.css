@@ -33,6 +33,10 @@ body {
     width: 300px;
 }
 
+.navigation.active {
+    width: 80px;
+}
+
 .navigation ul {
     left: 0;
     position: absolute;
@@ -119,4 +123,87 @@ body {
     position: absolute;
     right: 0;
     width: 50px;
-} 
+}
+
+/* main */
+.main {
+    background: var(--white);
+    left: 300px;
+    min-height: 100vh;
+    position: absolute;
+    transition: 0.5s;
+    width: calc(100% - 300px);
+}
+
+.main.active {
+    left: 80px;
+    width: calc(100% - 80px);
+}
+
+.topbar {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.toggle {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 2.5em;
+    height: 60px;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    width: 60px;
+}
+
+.search {
+    margin: 0 10px;
+    position: relative;
+    width: 400px;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+.search label input {
+    border: 1px solid var(--black2);
+    border-radius: 20px;
+    font-size: 18px;
+    height: 40px;
+    outline: none;
+    padding: 5px 20px 0 35px;
+    position: relative;
+    width: 100%;
+}
+
+.search label ion-icon {
+    font-size: 1.2em;
+    left: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.user {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 40px;
+}
+
+.user img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

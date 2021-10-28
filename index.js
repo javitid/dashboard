@@ -15,9 +15,9 @@ list.forEach(item => {
 // Menu toggle
 let toggle = document.querySelector('.toggle');
 let navigation = document.querySelector('.navigation');
-let principal = document.querySelector('.principal');
+let main = document.querySelector('.main');
 
 toggle.onclick = function () {
     navigation.classList.toggle('active');
-    principal.classList.toggle('active');
+    main.classList.toggle('active');
 }

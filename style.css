@@ -125,8 +125,8 @@ body {
     width: 50px;
 }
 
-/* principal */
-.principal {
+/* main */
+.main {
     background: var(--white);
     left: 300px;
     min-height: 100vh;
@@ -135,7 +135,7 @@ body {
     width: calc(100% - 300px);
 }
 
-.principal.active {
+.main.active {
     left: 80px;
     width: calc(100% - 80px);
 }

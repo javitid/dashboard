@@ -265,7 +265,8 @@ body {
     width: 100%;
 }
 
-.details .recentOrders {
+.details .recentOrders,
+.recentCustomers {
     background: var(--white);
     border-radius: 20px;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
@@ -359,4 +360,50 @@ body {
 
 .status.inprogress {
     background: var(--blue);
+}
+
+.recentCustomers .imgBx {
+    border-radius: 50%;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 40px;
+}
+
+.recentCustomers .imgBx img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.recentCustomers table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.recentCustomers table tr td {
+    padding: 12px 10px;
+}
+
+.recentCustomers table tr td h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.recentCustomers table tr td h4 span {
+    color: var(--black2);
+    font-size: 14px;
+}
+
+.recentCustomers table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.recentCustomers table tr:hover td h4 span {
+    color: var(--white);
 }

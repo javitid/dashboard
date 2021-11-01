@@ -21,3 +21,10 @@ toggle.onclick = function () {
     navigation.classList.toggle('active');
     main.classList.toggle('active');
 }
+
+// Switch stylesheet
+let root = document.documentElement;
+let switchStyle = document.querySelector('.switch-input');
+switchStyle.onclick = () => {
+    root.style.setProperty('--blue', switchStyle.checked ? 'orange' : '#287bff');
+}

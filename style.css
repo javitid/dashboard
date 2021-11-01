@@ -190,6 +190,10 @@ body {
     top: 0;
 }
 
+.switch {
+    color: var(--blue);
+}
+
 .user {
     border-radius: 50%;
     cursor: pointer;
@@ -475,7 +479,7 @@ body {
         z-index: 10001;
     }
 
-    .main.main.active .toggle {
+    .main.active .toggle {
         color: var(--white);
         left: initial;
         position: fixed;
